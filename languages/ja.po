@@ -1,0 +1,216 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple_Rei\n"
+"POT-Creation-Date: 2018-09-22 14:57+0900\n"
+"PO-Revision-Date: 2018-09-22 14:57+0900\n"
+"Last-Translator: \n"
+"Language-Team: TeeGuchi\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;esc_html_e;esc_attr_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../home.php:43 ../index.php:67 ../archive.php:36
+msgid "There were no posts."
+msgstr "投稿はありませんでした。"
+
+#: ../search.php:15
+msgid "Search Results"
+msgstr "検索結果"
+
+#: ../searchform.php:12
+msgid "Search"
+msgstr "検索"
+
+#: ../searchform.php:13
+msgid "Search &hellip;"
+msgstr "検索 &hellip;"
+
+#: ../index.php:64 ../template-parts/content-nothing.php:14
+msgid "The specified page could not be found."
+msgstr "ご指定のページは見つかりませんでした。"
+
+#: ../functions.php:90
+msgid "Header Main Menu"
+msgstr "ヘッダーメイン"
+
+#: ../functions.php:91
+msgid "Bottom Social Menu"
+msgstr "ボトムソーシャル"
+
+#: ../functions.php:116
+msgid "Sidebar Widget"
+msgstr "サイドバーウィジェット"
+
+#: ../functions.php:125
+msgid "Footer Widget"
+msgstr "フッターウィジェット"
+
+#: ../functions.php:134
+msgid "Bottom Widget"
+msgstr "ボトムウィジェット"
+
+#: ../functions.php:183
+#, php-format
+msgid "Required fields are marked %s"
+msgstr "%s が付いている欄は必須項目です。"
+
+#: ../functions.php:184
+msgid "Your email address will not be published."
+msgstr "メールアドレスが公開されることはありません。"
+
+#: ../single.php:28
+msgid "Prev"
+msgstr "前"
+
+#: ../single.php:29
+msgid "Next"
+msgstr "次"
+
+#: ../comments.php:18
+msgid "Comments"
+msgstr "コメント"
+
+#: ../template-parts/content-single.php:29
+msgid "Comments:0"
+msgstr "コメント:0"
+
+#: ../template-parts/content-single.php:29
+msgid "Comments:1"
+msgstr "コメント:1"
+
+#: ../template-parts/content-single.php:29
+msgid "Comments:%"
+msgstr "コメント:%"
+
+#: ../template-parts/content-single.php:62
+msgid "Categories"
+msgstr "カテゴリー"
+
+#: ../template-parts/content-single.php:66
+msgid "Tags"
+msgstr "タグ"
+
+#: ../template-parts/content-nothing.php:17
+msgid "There was nothing to match."
+msgstr "一致する記事はありませんでした。"
+
+#: ../inc/simplerei_customfields.php:15
+msgid "Last Modified"
+msgstr "最終更新日"
+
+#: ../inc/simplerei_customfields.php:26
+msgid "Do not display."
+msgstr "表示しない。"
+
+#: ../inc/simplerei_customfields.php:26
+msgid ""
+"This setting uses a customfields, but please do not set it from a "
+"customfields."
+msgstr ""
+"この設定ではカスタムフィールドを使用しますが、カスタムフィールドの項目から設"
+"定しないでください。"
+
+#: ../inc/simplerei_customfields.php:26
+msgid "After changing the theme, you can delete the saved value"
+msgstr "テーマを変更した後、保存された値を削除できます"
+
+#: ../inc/breadcrumbs_archive_title.php:15
+msgid "Y"
+msgstr "Y年"
+
+#: ../inc/breadcrumbs_archive_title.php:17
+msgid "Y-m"
+msgstr "Y年n月"
+
+#: ../inc/breadcrumbs_archive_title.php:19
+msgid "Y-m-d"
+msgstr "Y年n月j日"
+
+#: ../inc/simplerei_customizer.php:23
+msgid "Icon Color & Main Line Color"
+msgstr "アイコン & メインライン色"
+
+#: ../inc/simplerei_customizer.php:36
+msgid "Line Color"
+msgstr "ライン色"
+
+#: ../inc/simplerei_customizer.php:49
+msgid "Link Color"
+msgstr "リンク色"
+
+#: ../inc/simplerei_customizer.php:62
+msgid "Link Hover Color"
+msgstr "リンクホバー色"
+
+#: ../inc/simplerei_customizer.php:75
+msgid "Main Menu Text Color"
+msgstr "メインメニュー文字色"
+
+#: ../inc/simplerei_customizer.php:88
+msgid "Dropdown Menu Background Color"
+msgstr "ドロップダウンメニュー背景色"
+
+#: ../inc/simplerei_customizer.php:101
+msgid "Dropdown Menu Text Color"
+msgstr "ドロップダウンメニュー文字色"
+
+#: ../inc/simplerei_customizer.php:114
+msgid "Title Text Color"
+msgstr "タイトルテキスト色"
+
+#: ../inc/simplerei_customizer.php:127
+msgid "Text Color"
+msgstr "テキスト色"
+
+#: ../inc/simplerei_customizer.php:138
+msgid "Suggested image dimensions: 140 by 140 pixels."
+msgstr "推奨画像サイズ: 140x140ピクセル"
+
+#: ../inc/simplerei_customizer.php:145
+msgid "Other Settings"
+msgstr "その他の設定"
+
+#: ../inc/simplerei_customizer.php:156
+msgid ""
+"Display tagline on all pages. If not checked Display only on the front page."
+msgstr ""
+"全てのページでキャッチフレーズを表示する。※チェックされていない場合フロント"
+"ページのみに表示。"
+
+#: ../inc/simplerei_customizer.php:170
+msgid "Display breadcrumbs."
+msgstr "パンくずリストを表示する。"
+
+#: ../inc/simplerei_customizer.php:184
+msgid "Breadcrumbs Color"
+msgstr "パンくずリスト色"
+
+#: ../inc/simplerei_customizer.php:197
+msgid ""
+"Displays the search form when search result or designated page can not be "
+"found."
+msgstr "検索結果や指定ページが見つからなかった場合に検索フォームを表示する。"
+
+#: ../inc/simplerei_customizer.php:211
+msgid "Apply wide size to the first footer widget."
+msgstr "最初のフッターウィジェットにワイドサイズを適用する。"
+
+#: ../inc/simplerei_customizer.php:225
+msgid "Display post-thumbnail at post list."
+msgstr "投稿一覧ページにアイキャッチ画像を表示する。"
+
+#: ../inc/simplerei_customizer.php:239
+msgid "Display post-thumbnail at single post."
+msgstr "個別投稿ページにアイキャッチ画像を表示する。"
+
+#~ msgid "This Page"
+#~ msgstr "このページ"
+
+#~ msgid "Format:"
+#~ msgstr "フォーマット:"
