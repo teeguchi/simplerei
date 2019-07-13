@@ -13,18 +13,18 @@ if ( post_password_required() ) {
 ?>
 
 <div id="comments" class="comments-area">
-	<?php
-	if ( have_comments() ) : ?>
-		<h2 class="comments-title"><?php esc_html_e( 'Comments', 'simplerei' ); ?>: <span><?php comments_number(); ?></span></h2>
+<?php
+if ( have_comments() ) : ?>
+	<h2 class="comments-title"><?php esc_html_e( 'Comments', 'simplerei' ); ?>: <span><?php comments_number(); ?></span></h2>
 
-		<ol class="comment-list">
-			<?php
-				wp_list_comments( array( 'style' => 'ol', 'avatar_size' => 50, 'short_ping' => true ) );
-
-				the_comments_navigation();
-			?>
-		</ol>
+	<ol class="comment-list">
 	<?php
-	endif;
-	comment_form(); ?>
+		wp_list_comments( array( 'style' => 'ol', 'avatar_size' => 50, 'short_ping' => true ) );
+
+		the_comments_navigation();
+	?>
+	</ol>
+<?php
+endif;
+comment_form(); ?>
 </div><!-- /comments-area -->

@@ -42,17 +42,17 @@
 
 	<div class="entry-cover">
 		<div class="entry-content">
-			<?php
-				the_content();
+		<?php
+			the_content();
 
-				$args = array(
-					'before' => '<div class="page-links">',
-					'after' => '</div>',
-					'link_before' => '<span class="page-number">',
-					'link_after' => '</span>',
-				);
-				wp_link_pages( $args );
-			?>
+			$args = array(
+				'before' => '<div class="page-links">',
+				'after' => '</div>',
+				'link_before' => '<span class="page-number">',
+				'link_after' => '</span>',
+			);
+			wp_link_pages( $args );
+		?>
 		</div><!-- /entry-content -->
 	</div><!-- /entry-cover -->
 
@@ -62,8 +62,7 @@
 		<p class="post-cat"><span class="cat-text"><?php esc_html_e( 'Categories', 'simplerei' ); ?> / </span><span class="cat-links"><?php the_category( ', ' ); ?></span></p>
 	<?php
 	endif;
-
-	the_tags( '<p class="post-tags"><span class="tags-text">' . __( 'Tags', 'simplerei' ) . ' / </span><span class="tags-links">', ', ', '</span></p>' );
+		the_tags( '<p class="post-tags"><span class="tags-text">' . __( 'Tags', 'simplerei' ) . ' / </span><span class="tags-links">', ', ', '</span></p>' );
 
 	// Also display custom taxonomies.
 	if ( !get_the_category() && !get_the_tags() ) :

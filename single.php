@@ -29,6 +29,7 @@ while ( have_posts() ) : the_post(); ?>
 			'next_text' => __( 'Next', 'simplerei' ) . ' : %title',
 		);
 		the_post_navigation( $args );
+		
 endwhile; ?>
 </div><!-- /content-area -->
 

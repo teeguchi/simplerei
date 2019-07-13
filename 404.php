@@ -16,8 +16,8 @@ get_header(); ?>
 		</header>
 
 		<?php // Not found.
-			get_template_part( 'template-parts/content', 'nothing' ); ?>
-
+			get_template_part( 'template-parts/content', 'nothing' );
+		?>
 		</div>
 	</div><!-- /error-404 -->
 </div><!-- /content-area -->

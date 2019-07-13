@@ -28,21 +28,20 @@
 						<?php the_custom_logo(); ?>
 					</div><!-- /logo-cover -->
 				<?php
-				endif; ?>
-
-				<?php
+				endif;
+				
 				if ( display_header_text() ) : ?>
 					<div class="title-cover">
-						<?php
-						if ( is_front_page() || simplerei_other_settings( 'site_description' ) ) : ?>
-							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php
+					if ( is_front_page() || simplerei_other_settings( 'site_description' ) ) : ?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 
-							<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-						<?php
-						else: ?>
-							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php
-						endif; ?>
+						<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					<?php
+					else: ?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php
+					endif; ?>
 					</div><!-- /title-cover -->
 				<?php
 				endif;
@@ -61,19 +60,19 @@
 		if ( has_nav_menu( 'mainmenu' ) ) : ?>
 			<nav class="main-navigation">
 				<div class="wrap">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'mainmenu',
-							'menu_id'        => 'header-main-menu',
-						) );
-					?>
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'mainmenu',
+						'menu_id'        => 'header-main-menu',
+					) );
+				?>
 				</div><!-- /wrap -->
 			</nav><!-- /main-navigation -->
 		<?php
 		endif; ?>
 
 		<?php
-		if( get_header_image() && is_front_page() ) : ?>
+		if ( get_header_image() && is_front_page() ) : ?>
 			<div class="header-img-wrap">
 				<div class="header-img-cover">
 					<img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?> header image" class="header-img">

@@ -10,18 +10,19 @@
 get_header(); ?>
 
 <div class="content-area">
+<?php
+if ( have_posts() ) : ?>
 	<header class="archive-header">
 		<h1 class="page-title"><?php the_archive_title( '<span>', '</span>' ); ?></h1>
 	</header>
 
 	<div class="post-list">
 	<?php
-	if ( have_posts() ) :
-		while ( have_posts() ) : the_post();
-		// In the loop.
-			get_template_part( 'template-parts/content', 'postlist' );
+	while ( have_posts() ) : the_post();
+	// In the loop.
+		get_template_part( 'template-parts/content', 'postlist' );
 
-		endwhile; ?>
+	endwhile; ?>
 	</div><!-- /post-list -->
 
 	<?php

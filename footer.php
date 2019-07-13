@@ -23,7 +23,6 @@
 		</div><!-- /footer-wrap -->
 	<?php
 	endif; ?>
-
 		<div class="footer-bottom">
 		<?php
 		if ( is_active_sidebar( 'sidebar-3' ) ) : ?>
@@ -33,20 +32,19 @@
 				</aside>
 			</div><!-- /footer-wrap -->
 		<?php
-		endif; ?>
-
-		<?php
+		endif; 
+		
 		if ( has_nav_menu( 'socialmenu' ) ) : ?>
 			<nav class="social-navigation">
 				<div class="footer-wrap">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'socialmenu',
-							'menu_id'        => 'bottom-social-menu',
-							'link_before'    => '<span class="screen-reader-text">',
-							'link_after' => '</span>',
-						) );
-					?>
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'socialmenu',
+						'menu_id'        => 'bottom-social-menu',
+						'link_before'    => '<span class="screen-reader-text">',
+						'link_after' => '</span>',
+					) );
+				?>
 				</div><!-- /footer-wrap -->
 			</nav><!-- /social-navigation -->
 		<?php

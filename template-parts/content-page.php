@@ -21,15 +21,14 @@ else : ?>
 	<div class="entry-content front-content">
 <?php
 endif;
-
 	the_content();
+	
 	$args = array(
 		'before' => '<div class="page-links">',
 		'after' => '</div>',
 		'link_before' => '<span class="page-number">',
 		'link_after' => '</span>',
 	);
-
 	wp_link_pages( $args ); ?>
 	</div>
 </article>

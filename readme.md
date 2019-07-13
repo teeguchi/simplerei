@@ -26,5 +26,10 @@ Source URL: github.com/necolas/normalize.css
 
 == Changelog ==
 
+= 1.1.0 =  
+Bug fix for some template files.  
+Change heading styles.  
+Block editor support.  
+
 = 1.0.0 =  
 A first released.

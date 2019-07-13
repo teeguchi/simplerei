@@ -2,7 +2,7 @@
 
 /**
  * Theme Name: SimpleRei
- * Description: Used to style the TinyMCE editor.
+ * Description: SimpleRei Editor Styles.
  */
 
 body {
@@ -17,9 +17,10 @@ p {
 
 blockquote {
 	position: relative;
-	margin: 1em;
-	padding: 1em;
-	font-style: italic;
+	margin: 0 0 1em;
+	padding: 2em 1em;
+	border-left: unset;
+	font-family: "Noto Serif CJK JP", "Noto Serif", serif;
 }
 
 blockquote::before {
@@ -36,11 +37,20 @@ blockquote::after {
 	bottom: 0;
 	font-size: 2em;
 	content: "”";
+	line-height: 1;
+}
+
+blockquote p {
+	margin-top: 0;
 }
 
 table {
 	margin: 1em 0;
 	border-collapse: collapse;
+}
+
+.mce-item-table {
+	width: 100%;
 }
 
 table th,
@@ -68,4 +78,203 @@ pre {
 img,
 .wp-caption {
 	max-width: 100%;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	color: #dcdcdc;
+}
+
+/* Base Font 14px 
+ **/ 
+/* Post Title */
+.editor-post-title__block .editor-post-title__input {
+	font-family: Arial, sans-serif;
+	font-size: 1.625em;
+}
+
+/* Heading */
+h1,
+.wp-block-freeform.block-library-rich-text__tinymce h1 {
+	font-size: 1.643em;
+}
+
+h2,
+.wp-block-freeform.block-library-rich-text__tinymce h2 {
+	font-size: 1.5em;
+}
+
+h3,
+.wp-block-freeform.block-library-rich-text__tinymce h3 {
+	font-size: 1.164em;
+}
+
+h4,
+.wp-block-freeform.block-library-rich-text__tinymce h4 {
+	font-size: 1em;
+}
+
+h5,
+.wp-block-freeform.block-library-rich-text__tinymce h5 {
+	font-size: 0.829em;
+}
+
+h6,
+.wp-block-freeform.block-library-rich-text__tinymce h6 {
+	font-size: 0.72em;
+}
+
+/* Code */
+.wp-block-code .block-editor-plain-text {
+	font-size: 14px;
+}
+
+/* Base Font 16px 
+ **/ 
+@media screen and (min-width: 740px) {
+	/* Post Title */
+	.editor-post-title__block .editor-post-title__input {
+		font-size: 1.625em;
+	}
+	
+	/* Heading */
+	h1,
+	.wp-block-freeform.block-library-rich-text__tinymce h1 {
+		font-size: 1.625em;
+	}
+
+	h2,
+	.wp-block-freeform.block-library-rich-text__tinymce h2 {
+		font-size: 1.4375em;
+	}
+
+	h3,
+	.wp-block-freeform.block-library-rich-text__tinymce h3 {
+		font-size: 1.169em;
+	}
+
+	h4,
+	.wp-block-freeform.block-library-rich-text__tinymce h4 {
+		font-size: 1em;
+	}
+
+	h5,
+	.wp-block-freeform.block-library-rich-text__tinymce h5 {
+		font-size: 0.825em;
+	}
+
+	h6,
+	.wp-block-freeform.block-library-rich-text__tinymce h6 {
+		font-size: 0.6875em;
+	}
+	
+	/* Code */
+	.wp-block-code .block-editor-plain-text,
+	.wp-block-freeform.block-library-rich-text__tinymce pre {
+		font-size: 16px;
+	}
+}
+
+/* Block Width */
+.wp-block {
+	max-width: 755px;
+}
+
+/* Blockquote */
+.wp-block-quote,
+.wp-block-freeform.block-library-rich-text__tinymce blockquote {
+	border-left: unset;
+}
+
+.wp-block-quote.is-large,
+.wp-block-quote.is-style-large {
+	margin: 0 0 1em;
+	padding: 2em 1em;
+}
+
+.wp-block-quote.is-large p,
+.wp-block-quote.is-style-large p {
+	font-style: normal;
+}
+
+.wp-block-quote__citation,
+.wp-block-quote cite,
+.wp-block-quote footer {
+	margin-top: 1em;
+	color: #333;
+	font-size: .9em;
+	font-style: italic;
+}
+
+/* Separator */
+.wp-block-separator {
+	border: none;
+	border-bottom: 2px solid #dcdcdc;
+}
+
+/* Caption */
+.wp-block-image figcaption,
+.wp-block-embed figcaption {
+	color: #333;
+	font-size: .9em;
+}
+
+.wp-block-freeform.block-library-rich-text__tinymce dl.wp-caption .wp-caption-dd {
+	margin-top: .5em;
+	font-size: .9em;
+	text-align: center;
+}
+
+/* Code */
+.wp-block-code {
+	border-radius: 0;
+}
+
+/* Cover */
+.wp-block[data-type="core/cover"][data-align="left"] > .editor-block-list__block-edit,
+.wp-block[data-type="core/cover"][data-align="right"] > .editor-block-list__block-edit {
+	width: 60%;
+}
+
+.wp-block[data-type="core/cover"][data-align="left"] .wp-block[data-type="core/paragraph"],
+.wp-block[data-type="core/cover"][data-align="right"] .wp-block[data-type="core/paragraph"] {
+	padding: 0;
+}
+
+.wp-block[data-type="core/cover"][data-align="left"] .wp-block[data-type="core/paragraph"] .editor-block-list__block-edit,
+.wp-block[data-type="core/cover"][data-align="right"] .wp-block[data-type="core/paragraph"] .editor-block-list__block-edit {
+	float: unset;
+	margin: 14px 0;
+}
+
+[data-align="left"] .wp-block-cover,
+[data-align="left"] .wp-block-cover-image,
+[data-align="right"] .wp-block-cover,
+[data-align="right"] .wp-block-cover-image {
+	max-width: unset;
+}
+
+/* Classic wp-caption */
+.wp-block-freeform.block-library-rich-text__tinymce dl.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-block-freeform.block-library-rich-text__tinymce dl.alignleft {
+	margin: .5em 1em .5em 0;
+}
+
+.wp-block-freeform.block-library-rich-text__tinymce dl.alignright {
+	margin: .5em 0 .5em 1em;
+}
+
+/* Widget */
+.wp-block[data-type="core/categories"] ul,
+.wp-block[data-type="core/archives"] ul,
+.wp-block[data-type="core/latest-posts"] ul,
+.wp-block[data-type="core/rss"] ul {
+	list-style-type: none;
+	padding-left: 0;
 }
