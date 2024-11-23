@@ -174,7 +174,7 @@ if ( ! function_exists( 'simplerei_rgb2hex' ) ) {
 		$hex_color = '#';
 
 		foreach ( $rgb_color as $value ) {
-			$hex_color .= substr( '0' . dechex( $value ), -2 );
+			$hex_color .= substr( '0' . dechex( round( $value ) ), -2 ); // Round off the decimal point.
 		}
 
 		return $hex_color;

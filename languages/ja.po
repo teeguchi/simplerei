@@ -1,104 +1,69 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Simple_Rei\n"
-"POT-Creation-Date: 2018-09-22 14:57+0900\n"
-"PO-Revision-Date: 2018-09-22 14:57+0900\n"
+"POT-Creation-Date: 2024-11-22 17:29+0900\n"
+"PO-Revision-Date: 2024-11-22 17:30+0900\n"
 "Last-Translator: \n"
 "Language-Team: TeeGuchi\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;esc_html_e;esc_attr_e\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;esc_html_e;"
+"esc_attr_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../home.php:43 ../index.php:67 ../archive.php:36
+#: ../archive.php:37 ../home.php:43 ../index.php:68
 msgid "There were no posts."
 msgstr "投稿はありませんでした。"
-
-#: ../search.php:15
-msgid "Search Results"
-msgstr "検索結果"
-
-#: ../searchform.php:12
-msgid "Search"
-msgstr "検索"
-
-#: ../searchform.php:13
-msgid "Search &hellip;"
-msgstr "検索 &hellip;"
-
-#: ../index.php:64 ../template-parts/content-nothing.php:14
-msgid "The specified page could not be found."
-msgstr "ご指定のページは見つかりませんでした。"
-
-#: ../functions.php:90
-msgid "Header Main Menu"
-msgstr "ヘッダーメイン"
-
-#: ../functions.php:91
-msgid "Bottom Social Menu"
-msgstr "ボトムソーシャル"
-
-#: ../functions.php:116
-msgid "Sidebar Widget"
-msgstr "サイドバーウィジェット"
-
-#: ../functions.php:125
-msgid "Footer Widget"
-msgstr "フッターウィジェット"
-
-#: ../functions.php:134
-msgid "Bottom Widget"
-msgstr "ボトムウィジェット"
-
-#: ../functions.php:183
-#, php-format
-msgid "Required fields are marked %s"
-msgstr "%s が付いている欄は必須項目です。"
-
-#: ../functions.php:184
-msgid "Your email address will not be published."
-msgstr "メールアドレスが公開されることはありません。"
-
-#: ../single.php:28
-msgid "Prev"
-msgstr "前"
-
-#: ../single.php:29
-msgid "Next"
-msgstr "次"
 
 #: ../comments.php:18
 msgid "Comments"
 msgstr "コメント"
 
-#: ../template-parts/content-single.php:29
-msgid "Comments:0"
-msgstr "コメント:0"
+#: ../functions.php:99
+msgid "Header Main Menu"
+msgstr "ヘッダーメイン"
 
-#: ../template-parts/content-single.php:29
-msgid "Comments:1"
-msgstr "コメント:1"
+#: ../functions.php:100
+msgid "Bottom Social Menu"
+msgstr "ボトムソーシャル"
 
-#: ../template-parts/content-single.php:29
-msgid "Comments:%"
-msgstr "コメント:%"
+#: ../functions.php:128
+msgid "Sidebar Widget"
+msgstr "サイドバーウィジェット"
 
-#: ../template-parts/content-single.php:62
-msgid "Categories"
-msgstr "カテゴリー"
+#: ../functions.php:137
+msgid "Footer Widget"
+msgstr "フッターウィジェット"
 
-#: ../template-parts/content-single.php:66
-msgid "Tags"
-msgstr "タグ"
+#: ../functions.php:146
+msgid "Bottom Widget"
+msgstr "ボトムウィジェット"
 
-#: ../template-parts/content-nothing.php:17
-msgid "There was nothing to match."
-msgstr "一致する記事はありませんでした。"
+#: ../functions.php:173
+#, fuzzy, php-format
+msgid "Required fields are marked %s"
+msgstr "%s が付いている欄は必須項目です"
+
+#: ../functions.php:174
+msgid "Your email address will not be published."
+msgstr "メールアドレスが公開されることはありません。"
+
+#: ../inc/breadcrumbs_archive_title.php:15
+msgid "Y"
+msgstr "Y年"
+
+#: ../inc/breadcrumbs_archive_title.php:17
+msgid "Y-m"
+msgstr "Y年n月"
+
+#: ../inc/breadcrumbs_archive_title.php:19
+msgid "Y-m-d"
+msgstr "Y年n月j日"
 
 #: ../inc/simplerei_customfields.php:15
 msgid "Last Modified"
@@ -113,24 +78,12 @@ msgid ""
 "This setting uses a customfields, but please do not set it from a "
 "customfields."
 msgstr ""
-"この設定ではカスタムフィールドを使用しますが、カスタムフィールドの項目から設"
-"定しないでください。"
+"この設定ではカスタムフィールドを使用しますが、カスタムフィールドの項目から"
+"設定しないでください。"
 
 #: ../inc/simplerei_customfields.php:26
 msgid "After changing the theme, you can delete the saved value"
 msgstr "テーマを変更した後、保存された値を削除できます"
-
-#: ../inc/breadcrumbs_archive_title.php:15
-msgid "Y"
-msgstr "Y年"
-
-#: ../inc/breadcrumbs_archive_title.php:17
-msgid "Y-m"
-msgstr "Y年n月"
-
-#: ../inc/breadcrumbs_archive_title.php:19
-msgid "Y-m-d"
-msgstr "Y年n月j日"
 
 #: ../inc/simplerei_customizer.php:23
 msgid "Icon Color & Main Line Color"
@@ -170,44 +123,94 @@ msgstr "テキスト色"
 
 #: ../inc/simplerei_customizer.php:138
 msgid "Suggested image dimensions: 140 by 140 pixels."
-msgstr "推奨画像サイズ: 140x140ピクセル"
+msgstr "推奨画像サイズ: 140x140ピクセル."
 
 #: ../inc/simplerei_customizer.php:145
 msgid "Other Settings"
 msgstr "その他の設定"
 
 #: ../inc/simplerei_customizer.php:156
-msgid ""
-"Display tagline on all pages. If not checked Display only on the front page."
-msgstr ""
-"全てのページでキャッチフレーズを表示する。※チェックされていない場合フロント"
-"ページのみに表示。"
+msgid "Display the tagline below the site title."
+msgstr "サイトタイトルの下にキャッチフレーズを表示する。"
 
 #: ../inc/simplerei_customizer.php:170
+msgid "Output the tagline as the meta description."
+msgstr "キャッチフレーズをメタディスクリプションとして出力する。"
+
+#: ../inc/simplerei_customizer.php:184
 msgid "Display breadcrumbs."
 msgstr "パンくずリストを表示する。"
 
-#: ../inc/simplerei_customizer.php:184
+#: ../inc/simplerei_customizer.php:198
 msgid "Breadcrumbs Color"
 msgstr "パンくずリスト色"
 
-#: ../inc/simplerei_customizer.php:197
+#: ../inc/simplerei_customizer.php:211
 msgid ""
 "Displays the search form when search result or designated page can not be "
 "found."
-msgstr "検索結果や指定ページが見つからなかった場合に検索フォームを表示する。"
+msgstr ""
+"検索結果や指定ページが見つからなかった場合に検索フォームを表示する。"
 
-#: ../inc/simplerei_customizer.php:211
+#: ../inc/simplerei_customizer.php:225
 msgid "Apply wide size to the first footer widget."
 msgstr "最初のフッターウィジェットにワイドサイズを適用する。"
 
-#: ../inc/simplerei_customizer.php:225
+#: ../inc/simplerei_customizer.php:239
 msgid "Display post-thumbnail at post list."
 msgstr "投稿一覧ページにアイキャッチ画像を表示する。"
 
-#: ../inc/simplerei_customizer.php:239
+#: ../inc/simplerei_customizer.php:253
 msgid "Display post-thumbnail at single post."
 msgstr "個別投稿ページにアイキャッチ画像を表示する。"
+
+#: ../index.php:65 ../template-parts/content-nothing.php:14
+msgid "The specified page could not be found."
+msgstr "ご指定のページは見つかりませんでした。"
+
+#: ../search.php:15
+msgid "Search Results"
+msgstr "検索結果"
+
+#: ../searchform.php:12
+msgid "Search"
+msgstr "検索"
+
+#: ../searchform.php:13
+msgid "Search &hellip;"
+msgstr "検索 &hellip;"
+
+#: ../single.php:28
+msgid "Prev"
+msgstr "前"
+
+#: ../single.php:29
+msgid "Next"
+msgstr "次"
+
+#: ../template-parts/content-nothing.php:17
+msgid "There was nothing to match."
+msgstr "一致する記事はありませんでした。"
+
+#: ../template-parts/content-single.php:29
+msgid "Comments:0"
+msgstr "コメント:0"
+
+#: ../template-parts/content-single.php:29
+msgid "Comments:1"
+msgstr "コメント:1"
+
+#: ../template-parts/content-single.php:29
+msgid "Comments:%"
+msgstr "コメント:%"
+
+#: ../template-parts/content-single.php:65
+msgid "Categories"
+msgstr "カテゴリー"
+
+#: ../template-parts/content-single.php:68
+msgid "Tags"
+msgstr "タグ"
 
 #~ msgid "This Page"
 #~ msgstr "このページ"

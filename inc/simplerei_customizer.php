@@ -146,6 +146,20 @@ function simplerei_customize_register( $wp_customize ) {
 		'priority' => 300,
 	) );
 
+	// Display the tagline.
+	$wp_customize->add_setting( 'the_tagline', array(
+		'default' => true,
+		'sanitize_callback' => 'absint',
+	) );
+
+	$wp_customize->add_control( 'the_tagline', array(
+		'label'    => __( 'Display the tagline below the site title.', 'simplerei' ),
+		'section'  => 'other',
+		'settings' => 'the_tagline',
+		'type'     => 'checkbox',
+		'priority' => 10,
+	) );
+
 	// Site description.
 	$wp_customize->add_setting( 'site_description', array(
 		'default' => true,
@@ -153,11 +167,11 @@ function simplerei_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_control( 'site_description', array(
-		'label'    => __( 'Display tagline on all pages. If not checked Display only on the front page.', 'simplerei' ),
+		'label'    => __( 'Output the tagline as the meta description.', 'simplerei' ),
 		'section'  => 'other',
 		'settings' => 'site_description',
 		'type'     => 'checkbox',
-		'priority' => 10,
+		'priority' => 12,
 	) );
 
 	// Display breadcrumbs.

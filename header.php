@@ -11,13 +11,16 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+<?php if ( simplerei_other_settings( 'site_description' ) ) : ?>
 	<meta name="description" content="<?php bloginfo( 'description' ); ?>">
+<?php endif; ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
+<?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 	<header id="top" class="site-header">
 		<div class="heading-cover">
 			<div class="wrap">
@@ -33,15 +36,26 @@
 				if ( display_header_text() ) : ?>
 					<div class="title-cover">
 					<?php
-					if ( is_front_page() || simplerei_other_settings( 'site_description' ) ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-
-						<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					if ( simplerei_other_settings( 'the_tagline' ) ) {
+						if ( is_front_page() ) : ?>
+							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+						<?php
+						else: ?>
+							<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></div>
+						<?php
+						endif; ?>
+							<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 					<?php
-					else: ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+					} else {
+						if ( is_front_page() ) : ?>
+							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+						<?php
+						else: ?>
+							<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></div>
+						<?php
+						endif; ?>
 					<?php
-					endif; ?>
+					} ?>
 					</div><!-- /title-cover -->
 				<?php
 				endif;

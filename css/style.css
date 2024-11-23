@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /*
 Theme Name: SimpleRei
 Theme URI: https://teeguchi.com/simplerei/
@@ -10,13 +9,13 @@ Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, 
 Text Domain: simplerei
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Version: 1.1.0
+Version: 1.1.1
 */
 
 /***********************************************************************
  * Breakpoints:
- *     Mobile => lt740px
- *     PC => lt1200px
+ *     Mobile => le740px
+ *     PC => le1200px
  *
  * Table of contents:
  *     0.Normalize.css
@@ -227,6 +226,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 /**
@@ -319,6 +319,7 @@ textarea {
 
 [type="search"] {
   -webkit-appearance: textfield; /* 1 */
+  appearance: textfield;
   outline-offset: -2px; /* 2 */
 }
 
@@ -876,6 +877,11 @@ select {
 	margin-top: 1.4em;
 }
 
+.page-main .entry-content h4,
+.post-main .entry-content h4 {
+	margin: 1.7em 0 1em;
+}
+
 .page-main .entry-content h2,
 .post-main .entry-content h2,
 .page-main .entry-content h3,
@@ -941,6 +947,11 @@ select {
 .page-main .entry-content p,
 .post-main .entry-content p {
 	line-height: 1.7;
+}
+
+.page-main .entry-content p a,
+.post-main .entry-content p a {
+	text-decoration: underline;
 }
 
 .page-main .front-content > h1:first-child,
@@ -1743,13 +1754,19 @@ select {
 
 /* page top */
 #page-top {
-	display: none;
+	display: block;
 	position: fixed;
 	right: 0;
 	bottom: 0;
 	z-index: 99;
 	margin-right: .1em;
 	margin-bottom: 1.5em;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+#page-top.show {
+	opacity: 1;
 }
 
 #page-top a {

@@ -10,10 +10,12 @@
 /* Load scripts and styles.
  */
 function simplerei_scripts() {
-	wp_enqueue_style( 'fontawesome', get_theme_file_uri( '/fontawesome/css/fontawesome-all.min.css' ), array(), '5.0.10' );
-	wp_enqueue_style( 'simplerei-style', get_theme_file_uri( '/css/style.min.css' ), array(), '1.1.0' );
-	wp_enqueue_script( 'jquery-com', get_theme_file_uri( '/js/jquery-3.0.0.js' ), array(), '3.0.0', true );
-	wp_enqueue_script( 'simplerei-script', get_theme_file_uri( '/js/script.min.js' ), array(), '1.0', true );
+	$theme_version = wp_get_theme()->get( 'Version' );
+
+	wp_enqueue_style( 'fontawesome', get_theme_file_uri( '/fontawesome/css/fontawesome-all.min.css' ), array(), '5.0.10', 'all' );
+	wp_enqueue_style( 'simplerei-style', get_theme_file_uri( '/css/style.min.css' ), array(), $theme_version, 'all' );
+	wp_enqueue_script( 'jquery-com', get_theme_file_uri( '/js/jquery-3.7.1.min.js' ), array(), '3.7.1', true );
+	wp_enqueue_script( 'simplerei-script', get_theme_file_uri( '/js/script.min.js' ), array(), $theme_version, true );
 }
 add_action( 'wp_enqueue_scripts', 'simplerei_scripts' );
 
@@ -153,15 +155,6 @@ function simplerei_widgets_init() {
 }
 add_action( 'widgets_init', 'simplerei_widgets_init' );
 
-/* Modifie title tag.
- */
-function simplerei_title_hack( $sep ) {
-	$sep = ' | ';
-
-	return $sep;
-}
-add_filter( 'document_title_separator', 'simplerei_title_hack' );
-
 /* Modifie archive title.
  */
 function simplerei_archive_title( $title ) {
@@ -174,19 +167,6 @@ function simplerei_archive_title( $title ) {
 	return $title;
 }
 add_filter( 'get_the_archive_title', 'simplerei_archive_title' );
-
-/* Modifie tag cloud display of widget.
- */
-function simplerei_widget_tag_cloud_args( $args ) {
-	$args['largest']  = 1;
-	$args['smallest'] = 1;
-	$args['unit']     = 'em';
-	$args['taxonomy'] = array( 'post_tag' );
-	$args['separator'] = '<span>, </span>';
-
-	return $args;
-}
-add_filter( 'widget_tag_cloud_args', 'simplerei_widget_tag_cloud_args' );
 
 /* Modifie comment form.
  */
@@ -213,7 +193,7 @@ add_filter( 'nav_menu_css_class', 'simplerei_social_menuclass', 10, 2 );
 function simplerei_first_post_year() {
 	$first_post_year = '';
 	$args = array(
-		'post_type' => 'post',
+		'post_type' => 'any',
 		'posts_per_page' => 1,
 		'orderby' => 'date',
 		'order' => 'ASC',

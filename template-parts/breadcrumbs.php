@@ -30,7 +30,7 @@ if ( is_single() ) : ?>
 			</li>
 		<?php
 		endif; ?>
-			<li class="current"><?php the_title(); ?></li>
+			<li class="current"><span class="screen-reader-text"><?php the_title(); ?></span></li>
 	</ul>
 
 <?php
@@ -61,14 +61,14 @@ elseif ( is_page() ) : ?>
 		?>
 		<li class="parent"><?php echo '<a href="' . esc_url( get_page_link( $id ) ) .'">' . get_the_title( $id ) . '</a>'; ?></li>
 		<?php } } ?>
-		<li class="current"><?php the_title(); ?></li>
+		<li class="current"><span class="screen-reader-text"><?php the_title(); ?></span></li>
 	</ul>
 
 <?php
 elseif ( is_home() ) : ?>
 	<ul>
 		<li class="home"><?php echo '<a href="' . esc_url( home_url() ) . '">' . get_the_title( $home_id ) . '</a>'; ?></li>
-		<li class="current"><?php single_post_title(); ?></li>
+		<li class="current"><span class="screen-reader-text"><?php single_post_title(); ?></span></li>
 	</ul>
 <?php
 endif; ?>

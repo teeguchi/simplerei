@@ -19,6 +19,12 @@ Source URL: github.com/necolas/normalize.css
 
 == Changelog ==
 
+= 1.2.0 =
+* Some function changes in "Other Settings" in Theme Customizer.
+* Fixed deprecated functions.
+* Bug fix for some template files.
+* Minor changes to style.css.
+
 = 1.1.0 =
 * Bug fix for some template files.
 * Change heading styles.

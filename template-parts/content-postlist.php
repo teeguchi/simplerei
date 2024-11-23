@@ -37,5 +37,5 @@
 		</div><!-- /entry-content -->
 	</div><!-- / entry-cover -->
 
-	<div class="post-link"><a href="<?php the_permalink(); ?>"></a></div>
+	<div class="post-link"><a href="<?php the_permalink(); ?>"><span class="screen-reader-text"><?php the_title(); ?></span></a></div>
 </article>

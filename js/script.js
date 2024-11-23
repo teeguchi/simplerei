@@ -42,9 +42,9 @@ jQuery(function($) {
 	$(window).scroll(function() {
 		var value = $(this).scrollTop();
 		if (value > 155) {
-			$('#page-top').fadeIn('slow');
+			$('#page-top').addClass('show');
 		} else {
-			$('#page-top').fadeOut('slow');
+			$('#page-top').removeClass('show');
 		}
 	});
 });

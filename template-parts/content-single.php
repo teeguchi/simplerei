@@ -28,8 +28,11 @@
 		if ( comments_open() || get_comments_number() ) : ?>
 			<span class="post-comment"><?php comments_popup_link( __( 'Comments:0', 'simplerei' ), __( 'Comments:1', 'simplerei' ), __( 'Comments:%', 'simplerei' ) ); ?></span>
 		<?php
-		endif; ?>
+		endif;
+		if ( is_user_logged_in() ) : ?>
 			<span class="post-edit"><?php edit_post_link(); ?></span>
+		<?php
+		endif; ?>
 		</div><!-- /entry-meta -->
 		<?php
 		// Featured-image for single.php.
@@ -65,7 +68,7 @@
 		the_tags( '<p class="post-tags"><span class="tags-text">' . __( 'Tags', 'simplerei' ) . ' / </span><span class="tags-links">', ', ', '</span></p>' );
 
 	// Also display custom taxonomies.
-	if ( !get_the_category() && !get_the_tags() ) :
+	if ( ! get_the_category() && ! get_the_tags() ) :
 		$args = array(
 			'template' => '<p><span class="tax-text">%s /</span> <span class="tax-links">%l</span></p>',
 		);
